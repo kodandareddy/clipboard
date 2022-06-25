@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    h3{
+    @apply mb-8 font-semibold  text-4xl md:text-5xl text-[#4C545D]
+    }
+    p{
+      @apply text-[#9FABB2]
+    }
+    h5{
+      @apply mb-2 text-2xl text-[#4C545D] font-bold
+  
+    }
+}
+.button-container{
+@apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4
+}
+.section-container{
+@apply max-w-6xl mx-auto text-center px-10
+}
+body{
+    background-image:url("../images/bg-header-desktop.png");
+    background-repeat:no-repeat;
+    background-size: contain
+}
+
+@media(max-width:576px){
+  body{
+    background-image:url("../images/bg-header-mobile.png");
+
+  }
+}
